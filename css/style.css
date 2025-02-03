@@ -382,6 +382,17 @@ button {
     color: #060606;
     margin-left: 0px;
 }
+
+.services_text2 {
+    width: 100%;
+    float: left;
+    font-size: 22px;
+    color: #060606;
+    margin-left: 0px;
+	gap: 20px;
+	line-height: 1.5;
+}
+
 .moremore_bt {
     width: 170px;
     float: left;
@@ -920,7 +931,7 @@ button {
   left: 0;
   top: 0;
   height: 100%; /* Make it full height */
-  width: 200px; /* Set the desired width */
+  width: 320px; /* Set the desired width */
   background-color: white; /* Change this to your desired color */
   color: black;
   padding: 20px; /* Add some padding */
@@ -928,6 +939,28 @@ button {
 }
 
 .main-content {
-  margin-left: 80px; /* Space for the sidebar */
+  margin-left: 150px; /* Space for the sidebar */
   padding: 20px; /* Add padding to the main content */
+}
+
+.custom-margin-left {
+	margin-top: 10%;
+    margin-left: 200px; /* Set left margin to 200px */
+}
+
+#custom-header {
+    position: absolute; /* or use 'fixed' if you want it to stay in view while scrolling */
+    right: 0; /* Stick to the right side */
+    background: #f7f7f7; /* Fallback background color */
+    padding: 90px 0; /* Adjust padding as needed */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    width: 100vw; /* Full viewport width */
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Prevent overflow */
+}
+.custom-header-wrapper {
+  position: relative;
+  z-index: 9;
+  text-align: left;
 }
