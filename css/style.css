@@ -126,7 +126,7 @@ li,
 ol {
      margin: 0px;
      padding: 0px;
-     list-style: none;
+     list-style: numberic;
 }
 
 p {
@@ -956,7 +956,6 @@ button {
 
 .custom-margin-left {
 	margin-top: 10%;
-    margin-left: 200px; /* Set left margin to 200px */
 }
 
 .custom-margin-left2 {
@@ -979,3 +978,7 @@ button {
   z-index: 9;
   text-align: left;
 }
+
+.centered-image {
+            text-align: center; /* Center text inside the div */
+        }
