@@ -121,9 +121,13 @@ button:focus {
      outline: none;
 }
 
-ul,
-li,
-ol {
+ul{
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+ol{
      margin: 0px;
      padding: 0px;
      list-style: numberic;
