@@ -967,21 +967,21 @@ button {
 }
 
 #custom-header {
-    position: absolute; /* or use 'fixed' if you want it to stay in view while scrolling */
-    right: 0; /* Stick to the right side */
-    background: #f7f7f7; /* Fallback background color */
-    padding: 90px 0; /* Adjust padding as needed */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    width: 100vw; /* Full viewport width */
-    height: 300px; /* Set a fixed height */
-    overflow: hidden; /* Prevent overflow */
-}
+            position: absolute; /* or use 'fixed' if you want it to stay in view while scrolling */
+            right: 0; /* Stick to the right side */
+            background: #f7f7f7; /* Fallback background color */
+            padding: 90px 0; /* Adjust padding as needed */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the image */
+            width: 100vw; /* Full viewport width */
+            height: 300px; /* Set a fixed height */
+            overflow: hidden; /* Prevent overflow */
+        }
 .custom-header-wrapper {
-  position: relative;
-  z-index: 9;
-  text-align: left;
-}
+            position: relative;
+            z-index: 9;
+            text-align: left;
+        }
 
 .centered-image {
             text-align: center; /* Center text inside the div */
