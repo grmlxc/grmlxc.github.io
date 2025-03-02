@@ -127,6 +127,7 @@ ul{
      list-style: none;
 }
 
+
 ol{
      margin: 0px;
      padding: 0px;
@@ -221,7 +222,7 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
+     padding-top: 300px;
      padding-bottom: 0px;
 }
 .padding_0{
@@ -974,7 +975,7 @@ button {
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the image */
             width: 100vw; /* Full viewport width */
-            height: 300px; /* Set a fixed height */
+            height: 500px; /* Set a fixed height */
             overflow: hidden; /* Prevent overflow */
         }
 .custom-header-wrapper {
