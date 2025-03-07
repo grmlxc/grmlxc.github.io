@@ -172,7 +172,7 @@ img {
 }
 
 .container {
-max-width: 1200px; /* Keeps layout centered and manageable */
+max-width: 1080px; /* Keeps layout centered and manageable */
   margin: 0 auto; /* Centers the container */
 	  width: 100%; /* Allow it to fill available space until max-width */
 }
