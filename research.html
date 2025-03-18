@@ -1,115 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>Research</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content=""> 
-<!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Responsive-->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>        
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+        }
+		
+		body {
+			margin-right: 10px;    /* Center the body within the viewport */
+		}
+		.container {
+			width: 100%;        /* Full width */
+			padding: 0 15px;   /* Optional padding */
+		}
+        .main {
+            float: left;
+			width: 100%;
+        }
+		
+		#random-image {
+			width: 100vw;          /* Full viewport width */
+			height: 500px;        /* Fixed height */
+			object-fit: cover;    /* Crop the image to cover the container */
+			object-position: center; /* Center the image within the container */
+		}
+		
+		#normal-image{
+			width: 100%;
+			height: auto;
+		}
+		
+		#table-image{
+			width: 400px;
+			height: auto;
+		}
+
+        @media only screen and (max-width: 620px) {
+            .main, .right {
+                width: 100%; /* Stack on small screens */
+            }
+        }
+    </style>
+    <title>Research</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-<!--header section start -->
-   <div class="header_section header_bg">
+
+<body style="font-family:Verdana;color:#1E1E1E;">
+<div style="padding:15px;text-align:center;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="research.html">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-              </li>
-				<li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="teaching.html">Teaching</a>
-              </li>			
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Contact</a>
-              </li>			
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+</div>
+
+<div>
+<div>
+    <div class="random-image-container">
+        <img id="random-image" src="images/bg1.jpg" alt="Random Image">
+        <h1 class="overlay-text">RESEARCH</h1>
     </div>
-<!--header section end -->
-    <!-- Sidebar content here -->
+</div>
+</div>
 <div class="container">
-		<div id="custom-header" style="width: 100%;">
-    <div class="container" style="padding-top: 200px;">
-        <h1 class="banner_taital" style="color: white; margin-left: 5%;">RESEARCH</h1>
+<div style="overflow:auto">
+    <div class="main" style="padding-top: 5%">
+		
+	<table>
+        <tr>
+            <td><b>Integrating ML/DL with physics-based 3D CTMs can address air pollution simulation limitations in four key areas:</b></td>
+            <td></td>
+        </tr>
+	    <tr>
+            <td>Spatial Pattern Estimation: ML/DL enhances CTMs by assimilating multi-source data (e.g., satellite observations, ground monitors) to estimate spatial patterns of ambient pollutant concentrations and wet deposition, compensating for coarse resolution and biases.</td>
+            <td><img class="table-image" src="images/research1.png"></td>
+        </tr>
+	    <tr>
+            <td>Forecast Performance Enhancement: Hybrid frameworks combine CTMs with real-time data assimilation. ML-driven systems refine predictions dynamically, overcoming CTMs' challenges with outdated inventories and parameterization uncertainties (e.g., emission inaccuracies, unphysical chemical simplifications), and bypassing computational bottlenecks of purely numerical approaches.</td>
+            <td><img class="table-image" src="images/research2.png"></td>
+        </tr>	
+	    <tr>
+            <td>Dynamic Emission Adjustment: ML, integrated with data assimilation frameworks, constructs inverse relationships to update emission datasets in near-real-time, crucial for tracking abrupt changes (e.g., lockdowns).</td>
+            <td><img class="table-image" src="images/research3.png"></td>
+        </tr>
+	    <tr>
+            <td>PM2.5 Sensitivity Attribution: ML disentangles meteorological and anthropogenic drivers by establishing relationships between satellite-retrieved pollution data, emissions, and meteorological factors. This allows for direct understanding of how different factors (e.g., primary pollutant emissions) influence secondary pollutant concentrations, enabling projections under various climate scenarios without running 3D CTMs.</td>
+            <td><img class="table-image" src="images/research4.png"></td>
+        </tr>	
+    </table>
+		
+	<table style="margin-top: 7%">
+        <tr>
+            <td><b>Source Apportionment Modules - Applications and Development</b></td>
+            <td></td>
+        </tr>
+	    <tr>
+            <td>To design effective control policies for ambient pollutants, it is crucial to understand their sources. By implementing source apportionment modules in the CAMx and CMAQ models, we have analyzed the sources of PM2.5, NOx, O3, and the wet depositions of sulfate and nitrate. Beyond these applications, we have developed novel temporal source apportionment modules for PM2.5 and O3. These new tools allow us to understand how precursors emitted in previous time periods influence current levels of secondary pollutants. This innovative module provides insights into the temporal dynamics of pollutant sources, which can significantly enhance the precision of emission control strategies.</td>
+            <td><img class="table-image" src="images/research5.png"><br><img class="table-image" src="images/research6.png"></td>
+        </tr>
+    </table>
+	<table style="margin-top: 7%">
+        <tr>
+            <td><b>Investigation of Model Parameterization Schemes</b></td>
+            <td></td>
+        </tr>
+	    <tr>
+            <td>While ML/DL techniques can enhance model simulation performance, it remains crucial to understand how various physical and chemical processes influence pollutant concentrations. Using observational data, we have developed parameterization methods for aerosol below-cloud washout and heterogeneous HONO formation. By incorporating these new schemes, we can more accurately simulate pollutant concentration levels and better understand their impacts on the overall atmospheric environment.</td>
+            <td><img class="table-image" src="images/research7.png"></td>
+        </tr>
+    </table>
     </div>
-	</div>
 
 </div>
-    <!--about section start -->
-
-<div class="services_section layout_padding">
-	
-		<div class="container transparent_background" style="padding-top: 5%;">
-		<div class="row">
-		    <div class="col-md-5 offset-xl-2 col-xl-10">
-		<h1 class="services_taital">Research</h1>
-		<p class="services_text2">example research</p>
-	 </div>
-    </div>
-	</div>
-	<br>
 	
 </div>
-    <!--about section end -->
-        <!--footer section start -->
-    <div class="footer_section layout_padding">
-      <div class="container">
-        <!-- copyright section start -->
-        <div class="copyright_section">
-          <div class="copyright_text">Copyright © 2025. All rights reserved. Xingcheng Lu.</div>
-        </div>
-        <!-- copyright section end -->
-      </div>
-    </div>
-    <!--footer section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript --> 
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
-	<script src="js/randomImage.js" defer></script>
+	
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+    Copyright © 2025. All rights reserved. Xingcheng Lu.
+</div>
+<script src="js/randomImage.js" defer></script>
 </body>
 </html>

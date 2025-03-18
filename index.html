@@ -1,118 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>Home</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content=""> 
-<!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Responsive-->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>        
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+        }
+		
+		body {
+			margin-right: 10px;    /* Center the body within the viewport */
+		}
+		.container {
+			width: 100%;        /* Full width */
+			padding: 0 15px;   /* Optional padding */
+		}
+        .main {
+            float: left;
+            width: 100%;
+			/* width: 60%; */
+        }
+		/*
+        .right {
+            float: left;
+            width: 40%;
+            padding: 15px 10%;
+            margin-top: 7px;
+            text-align: center;
+        }
+		 */
+		#random-image {
+			width: 100vw;          /* Full viewport width */
+			height: 500px;        /* Fixed height */
+			object-fit: cover;    /* Crop the image to cover the container */
+			object-position: center; /* Center the image within the container */
+		}
+		
+		#normal-image{
+			width: 100%;
+			height: auto;
+		}
+
+        @media only screen and (max-width: 620px) {
+            .main, .right {
+                width: 100%; /* Stack on small screens */
+            }
+        }
+    </style>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-<!--header section start -->
-   <div class="header_section header_bg">
+
+<body style="font-family:Verdana;color:#1E1E1E;">
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="research.html">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-              </li>
-				<li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="teaching.html">Teaching</a>
-              </li>			
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Contact</a>
-              </li>			
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+
+<div>
+<div>
+    <div class="random-image-container">
+        <img id="random-image" src="images/bg1.jpg" alt="Random Image">
+        <h1 class="overlay-text">WELCOME!</h1>
     </div>
-<!--header section end -->
-    <!-- Sidebar content here -->
+</div>
+</div>
 <div class="container">
-		<div id="custom-header" style="width: 100%;">
-    <div class="container" style="padding-top: 200px;">
-        <h1 class="banner_taital" style="color: white; margin-left: 5%;">Welcome!</h1>
+<div style="overflow:auto">
+    <div class="main" style="padding-top: 5%">
+        <h1 class="bigtitle">About me</h1>
+        <p style="text-align: justify;">Welcome! I am an environmental scientist and physical geographer with a passion for unraveling the complexities of air pollution dynamics. My research integrates 3D chemical transport modeling, machine learning, and source apportionment techniques to investigate how anthropogenic activities (e.g., industrial emissions, urbanization) and biogenic processes interact with shifting meteorological conditions to shape ambient pollutant characteristics. By bridging regional-scale atmospheric processes with localized pollutant patterns, I aim to advance strategies for mitigating air quality risks in a changing climate.<br>
+		Currently, my work explores the synergistic roles of emission sources, weather systems, and land-atmosphere feedbacks in driving pollutant dispersion and transformation. I am particularly interested in translating model insights into actionable policies for sustainable urban and ecosystem management.<br>
+		This website highlights my projects, publications, and collaborative endeavors. Whether you’re a researcher, policymaker, or curious visitor, feel free to explore – and don’t hesitate to contact me with questions or ideas. Let’s connect and work toward cleaner air and healthier environments! </p>
     </div>
+	
+	<div class="main" style="padding-top: 5%">
+		<img id="normal-image" src="images/bg8.jpg">
 	</div>
 </div>
 	
-    <!--about section start -->
-    <div class="services_section layout_padding">
-      <div class="container">
-
-        <div class="row; col-xl-10" style="margin-top: 10%">
-            <h1 class="services_taital" style="text-align: left;">About me</h1>
-            <p class="services_text" style="text-align: justify;">Welcome! I am an environmental scientist and physical geographer with a passion for unraveling the complexities of air pollution dynamics. My research integrates 3D chemical transport modeling, machine learning, and source apportionment techniques to investigate how anthropogenic activities (e.g., industrial emissions, urbanization) and biogenic processes interact with shifting meteorological conditions to shape ambient pollutant characteristics. By bridging regional-scale atmospheric processes with localized pollutant patterns, I aim to advance strategies for mitigating air quality risks in a changing climate.<br>
-Currently, my work explores the synergistic roles of emission sources, weather systems, and land-atmosphere feedbacks in driving pollutant dispersion and transformation. I am particularly interested in translating model insights into actionable policies for sustainable urban and ecosystem management.<br>
-This website highlights my projects, publications, and collaborative endeavors. Whether you’re a researcher, policymaker, or curious visitor, feel free to explore – and don’t hesitate to contact me with questions or ideas. Let’s connect and work toward cleaner air and healthier environments!
-</p>
-          <div class="centered-image">
-            <div><img src="images/bg8.jpg"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--about section end -->
-
-    <!--footer section start -->
-    <div class="footer_section layout_padding">
-      <div class="container">
-        <!-- copyright section start -->
-        <div class="copyright_section">
-          <div class="copyright_text">Copyright © 2025. All rights reserved. Xingcheng Lu.</div>
-        </div>
-        <!-- copyright section end -->
-      </div>
-    </div>
-    <!--footer section end -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript --> 
-    <script src="js/owl.carousel.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+</div>
 	
-	<script src="js/randomImage.js" defer></script>
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+    Copyright © 2025. All rights reserved. Xingcheng Lu.
+</div>
+<script src="js/randomImage.js" defer></script>
 </body>
 </html>
