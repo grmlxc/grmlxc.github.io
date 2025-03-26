@@ -50,7 +50,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body style="font-family:Verdana;color:#1E1E1E;">
+<body style="font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif; color: #1E1E1E;">
 <div style="padding:15px;text-align:center;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,50 +78,35 @@
 <div class="container">
 <div style="overflow:auto">
     <div class="main" style="padding-top: 5%">
+		<h2 style="color: #18297B;"><b>Introduction:</b></h2>
+		<p style="text-align: justify;">Welcome! I am an environmental scientist and physical geographer with a passion for unraveling the complexities of air pollution dynamics. My research integrates 3D chemical transport modeling, machine learning, and source apportionment techniques to investigate how anthropogenic activities (e.g., industrial emissions, urbanization) and biogenic processes interact with shifting meteorological conditions to shape ambient pollutant characteristics. By bridging regional-scale atmospheric processes with localized pollutant patterns, I aim to advance strategies for mitigating air quality risks in a changing climate.<br><br>
+		Currently, my work explores the synergistic roles of emission sources, weather systems, and land-atmosphere feedbacks in driving pollutant dispersion and transformation. I am particularly interested in translating model insights into actionable policies for sustainable urban and ecosystem management.<br><br>
+		This website highlights my projects, publications, and collaborative endeavors. Whether you’re a researcher, policymaker, or curious visitor, feel free to explore – and don’t hesitate to contact me with questions or ideas. Let’s connect and work toward cleaner air and healthier environments!
+		</p>
 		
-	<table>
-        <tr>
-            <td><b>Integrating ML/DL with physics-based 3D CTMs can address air pollution simulation limitations in four key areas:</b></td>
-            <td></td>
-        </tr>
-	    <tr>
-            <td>Spatial Pattern Estimation: ML/DL enhances CTMs by assimilating multi-source data (e.g., satellite observations, ground monitors) to estimate spatial patterns of ambient pollutant concentrations and wet deposition, compensating for coarse resolution and biases.</td>
-            <td><img class="table-image" src="images/research1.png"></td>
-        </tr>
-	    <tr>
-            <td>Forecast Performance Enhancement: Hybrid frameworks combine CTMs with real-time data assimilation. ML-driven systems refine predictions dynamically, overcoming CTMs' challenges with outdated inventories and parameterization uncertainties (e.g., emission inaccuracies, unphysical chemical simplifications), and bypassing computational bottlenecks of purely numerical approaches.</td>
-            <td><img class="table-image" src="images/research2.png"></td>
-        </tr>	
-	    <tr>
-            <td>Dynamic Emission Adjustment: ML, integrated with data assimilation frameworks, constructs inverse relationships to update emission datasets in near-real-time, crucial for tracking abrupt changes (e.g., lockdowns).</td>
-            <td><img class="table-image" src="images/research3.png"></td>
-        </tr>
-	    <tr>
-            <td>PM2.5 Sensitivity Attribution: ML disentangles meteorological and anthropogenic drivers by establishing relationships between satellite-retrieved pollution data, emissions, and meteorological factors. This allows for direct understanding of how different factors (e.g., primary pollutant emissions) influence secondary pollutant concentrations, enabling projections under various climate scenarios without running 3D CTMs.</td>
-            <td><img class="table-image" src="images/research4.png"></td>
-        </tr>	
-    </table>
+		<h2 style="color: #18297B; margin-top: 100px"><b>Integrating ML/DL with 3D CTMs for Enhanced Air Pollution Modeling</b></h2>
+		<p style="text-align: justify;">Integrating ML/DL with physics-based 3D CTMs can address air pollution simulation limitations in four key areas:<br><br>
+		Spatial Pattern Estimation: ML/DL enhances CTMs by assimilating multi-source data (e.g., satellite observations, ground monitors) to estimate spatial patterns of ambient pollutant concentrations and wet deposition, compensating for coarse resolution and biases.<br>
+		<img src="images/research1.png" alt="research img 1"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		Forecast Performance Enhancement: Hybrid frameworks combine CTMs with real-time data assimilation. ML-driven systems refine predictions dynamically, overcoming CTMs' challenges with outdated inventories and parameterization uncertainties (e.g., emission inaccuracies, unphysical chemical simplifications), and bypassing computational bottlenecks of purely numerical approaches.<br>
+		<img src="images/research2.png" alt="research img 2"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		Dynamic Emission Adjustment: ML, integrated with data assimilation frameworks, constructs inverse relationships to update emission datasets in near-real-time, crucial for tracking abrupt changes (e.g., lockdowns).<br>
+		<img src="images/research3.png" alt="research img 3"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		PM2.5 Sensitivity Attribution: ML disentangles meteorological and anthropogenic drivers by establishing relationships between satellite-retrieved pollution data, emissions, and meteorological factors. This allows for direct understanding of how different factors (e.g., primary pollutant emissions) influence secondary pollutant concentrations, enabling projections under various climate scenarios without running 3D CTMs.
+		<img src="images/research4.png" alt="research img 4"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		</p>
 		
-	<table style="margin-top: 7%">
-        <tr>
-            <td><b>Source Apportionment Modules - Applications and Development</b></td>
-            <td></td>
-        </tr>
-	    <tr>
-            <td>To design effective control policies for ambient pollutants, it is crucial to understand their sources. By implementing source apportionment modules in the CAMx and CMAQ models, we have analyzed the sources of PM2.5, NOx, O3, and the wet depositions of sulfate and nitrate. Beyond these applications, we have developed novel temporal source apportionment modules for PM2.5 and O3. These new tools allow us to understand how precursors emitted in previous time periods influence current levels of secondary pollutants. This innovative module provides insights into the temporal dynamics of pollutant sources, which can significantly enhance the precision of emission control strategies.</td>
-            <td><img class="table-image" src="images/research5.png"><br><img class="table-image" src="images/research6.png"></td>
-        </tr>
-    </table>
-	<table style="margin-top: 7%">
-        <tr>
-            <td><b>Investigation of Model Parameterization Schemes</b></td>
-            <td></td>
-        </tr>
-	    <tr>
-            <td>While ML/DL techniques can enhance model simulation performance, it remains crucial to understand how various physical and chemical processes influence pollutant concentrations. Using observational data, we have developed parameterization methods for aerosol below-cloud washout and heterogeneous HONO formation. By incorporating these new schemes, we can more accurately simulate pollutant concentration levels and better understand their impacts on the overall atmospheric environment.</td>
-            <td><img class="table-image" src="images/research7.png"></td>
-        </tr>
-    </table>
+		<h2 style="color: #18297B; margin-top: 100px"><b>Source Apportionment Modules - Applications and Development</b></h2>
+		<p style="text-align: justify;">To design effective control policies for ambient pollutants, it is crucial to understand their sources. By implementing source apportionment modules in the CAMx and CMAQ models, we have analyzed the sources of PM2.5, NOx, O3, and the wet depositions of sulfate and nitrate. Beyond these applications, we have developed novel temporal source apportionment modules for PM2.5 and O3. These new tools allow us to understand how precursors emitted in previous time periods influence current levels of secondary pollutants. This innovative module provides insights into the temporal dynamics of pollutant sources, which can significantly enhance the precision of emission control strategies.<br><br>
+		<img src="images/research5.png" alt="research img 5"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		<img src="images/research6.png" alt="research img 6"  style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		</p>
+		
+		<h2 style="color: #18297B; margin-top: 100px"><b>Investigation of Model Parameterization Schemes</b></h2>
+		<p style="text-align: justify;">While ML/DL techniques can enhance model simulation performance, it remains crucial to understand how various physical and chemical processes influence pollutant concentrations. Using observational data, we have developed parameterization methods for aerosol below-cloud washout and heterogeneous HONO formation. By incorporating these new schemes, we can more accurately simulate pollutant concentration levels and better understand their impacts on the overall atmospheric environment.<br><br>
+		<img src="images/research7.png" alt="research img 7" style="display: block; margin: 0 auto; max-width: 500px; width: 100%;"><br>
+		</p>
+	
     </div>
 
 </div>
