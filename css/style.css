@@ -119,9 +119,9 @@ td:last-child {
     position: absolute; /* Position absolute to overlay on the image */
     top: 80%; /* Center vertically */
     left: 25%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    transform: translate(-25%, -50%); /* Adjust position to truly center */
     color: white; /* Text color */
-    font-size: 4em; /* Adjust font size as needed */
+    font-size: 3.8em; /* Adjust font size as needed */
     text-align: left; /* Center text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
 	font-weight: bold; /* Make text bold */
